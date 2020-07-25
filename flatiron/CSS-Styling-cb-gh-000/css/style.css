@@ -1,0 +1,81 @@
+/* This is a comment! */
+
+
+/* CSS SYNTAX:
+
+   selector {
+     property: value;
+   }
+*/
+
+
+/* MEASUREMENTS:
+
+   Usually, measurements are written in pixels, points, percentages or ems. Ems are relative to the font-size of the element (2em means 2 times the size of the current font)
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Clicker+Script|Elsie+Swash+Caps');
+
+/* TYPE SELECTORS */
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+figcaption {
+  font: normal 0.75em/1.5em 'Elsie Swash Caps', cursive;
+  /* Condensed version of:
+     font-weight: normal;
+     font-size: 0.75em;
+     line-height: 1.5em;
+     font-style: italic;
+     font-family: Georgia, "New Times Roman",  serif;
+  */
+
+  /* Color hexadecimal shorthand:
+     #AADD66 -> #AD6
+  */
+
+  /* OSX has a program called "Digital Color Meter" which can be used to sample any color on screen.
+  */
+  color: #777;
+  text-align: right;
+}
+
+
+/* CLASS SELECTORS */
+
+.milk-text {
+  font: bold 2.6em 'Elsie Swash Caps', cursive;
+  color: white;
+  text-shadow: 0 2px 3px #000;
+}
+
+
+/* ID SELECTORS */
+
+#logo {
+  background-color: aqua;
+}
+
+
+/* DESCENDANT SELECTORS */
+
+#logo h1, #logo h2 {
+  font-family: 'Clicker Script', cursive;
+}
+
+
+/* PSEUDO-CLASS SELECTORS */
+
+#details a:link, #details a:visited {
+  color: red;
+  text-decoration: none;
+}
+
+#details a:hover, #details a:active {
+  color: orange;
+  text-decoration: underline;
+}

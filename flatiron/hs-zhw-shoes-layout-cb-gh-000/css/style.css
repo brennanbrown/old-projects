@@ -1,0 +1,305 @@
+/********** Web Fonts **********/
+@import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900); /* font-family: 'Elsie Swash Caps', cursive; */
+@import url(http://fonts.googleapis.com/css?family=Clicker+Script); /* font-family: 'Clicker Script', cursive; */
+
+/* scale all images, and media to accomodate responsive layout. */
+img, video, audio, iframe, table, form { 
+	width:100%; /* IE */
+	max-width: 100%; /* FF, Safari, Chrome */
+}
+
+/* prevent the verify image on contact page from stretching */
+img.verif_img {
+	width: 50px;
+	height:30px;
+	vertical-align: bottom;
+}
+
+/********** Global **********/
+
+body {
+	background: url(../images/handmadepaper.png);
+}
+
+h2, h3 {
+	margin-bottom: 5px;
+}
+
+ul, ol {
+	margin-bottom: 10px;
+}
+
+li {
+	margin-left: 20px;
+}
+
+p, address {
+	margin: 0 0 25px;
+	font-size: 14px;
+}
+
+figure {
+	margin:0 0 10px;
+}
+
+	figcaption {
+		font: 12px 'Elsie Swash Caps', cursive;
+		color: #777;
+		text-align: right;
+	}
+
+table {
+	margin: 0 0 20px;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+
+tr:nth-child(even) {
+	background: #efefef;
+}
+
+th, td {
+	padding: 10px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+th {
+	background: #555;
+	color: white;
+}
+
+input, textarea {
+	display: block;
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 5px;
+	box-shadow: 0 3px 5px #ccc;
+	border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+	margin-top: 5px;
+	width: 100px;
+	background: black;
+	color: white;
+	border-radius: 25px;
+	border: 0;
+}
+
+input[type="submit"]:hover {
+	background: #555;
+}
+
+input.verif_box {
+	display: inline-block;
+	width: 80%;
+	margin-right: 5px;
+}
+
+iframe {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	height: 353px;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.shadow {
+	box-shadow: 0 3px 10px #333;
+}
+
+.milk_text {
+	font: bold 42px 'Elsie Swash Caps', cursive;
+	color: white;
+	text-shadow: 0 2px 3px #000;
+	margin: 0 0 10px;
+}
+
+.border_right {
+	border-right: 1px dotted #ccc;
+	padding-right: 20px;
+}
+
+.thumbs_up {
+	background: white url(../images/thumbs_up.jpg) no-repeat top right;
+}
+
+.contact_form {
+	height: 415px;
+}
+
+/********** Header **********/
+
+	/********** Nav Bar **********/
+
+	#nav_bar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+		background: url(../images/header-fade.gif);
+		border-bottom: 1px solid #ccc;
+		text-align: center;
+	}
+
+	#nav_bar nav {
+		border-left: 1px solid #ccc;
+	}
+
+		#nav_bar nav a {
+			display: inline-block;
+			width: 20%;
+			margin: 0;
+			padding: 22px 0;
+			text-transform: uppercase;
+			color: black;
+			text-align: center;
+			border-right: 1px solid #ccc;
+			text-decoration: none;
+			font: 20px "Trebuchet MS", Arial, sans-serif;
+		}
+
+		#nav_bar nav a.selected {
+			background: black;
+			color: white;
+		}
+
+		#nav_bar nav a:hover {
+			color:white;
+			/* gradient */
+			background: rgb(0,0,0); /* Old browsers */
+			background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(71,71,71,1) 28%, rgba(81,81,81,1) 35%, rgba(71,71,71,1) 72%, rgba(43,43,43,1) 87%, rgba(28,28,28,1) 91%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(28%,rgba(71,71,71,1)), color-stop(35%,rgba(81,81,81,1)), color-stop(72%,rgba(71,71,71,1)), color-stop(87%,rgba(43,43,43,1)), color-stop(91%,rgba(28,28,28,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(71,71,71,1) 28%,rgba(81,81,81,1) 35%,rgba(71,71,71,1) 72%,rgba(43,43,43,1) 87%,rgba(28,28,28,1) 91%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(71,71,71,1) 28%,rgba(81,81,81,1) 35%,rgba(71,71,71,1) 72%,rgba(43,43,43,1) 87%,rgba(28,28,28,1) 91%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(71,71,71,1) 28%,rgba(81,81,81,1) 35%,rgba(71,71,71,1) 72%,rgba(43,43,43,1) 87%,rgba(28,28,28,1) 91%,rgba(0,0,0,1) 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(71,71,71,1) 28%,rgba(81,81,81,1) 35%,rgba(71,71,71,1) 72%,rgba(43,43,43,1) 87%,rgba(28,28,28,1) 91%,rgba(0,0,0,1) 100%); /* W3C */
+		}
+
+	/********** Logo **********/
+
+	#logo {
+		padding: 85px 0 25px;
+		/* gradient */
+		background: rgb(229,229,229); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(229,229,229,1) 0%, rgba(255,255,255,1) 99%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(229,229,229,1)), color-stop(99%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 99%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 99%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 99%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 99%); /* W3C */
+	}
+
+		#logo h1 {
+			margin: 0;
+			padding-top: 20px;
+			display: inline-block;
+			font-family: 'Clicker Script', cursive;
+			background: url(../images/logo_crown_emboss.png) no-repeat top center;
+		}
+
+		#logo h2 {
+			margin:0;
+			display: inline-block;
+			font-family: 'Elsie Swash Caps', cursive;
+		}
+
+/********** Social Bar **********/
+
+#social {
+	position: fixed;
+	top: 200px;
+	right: 3px;
+	width: 40px;
+	z-index: 1;
+}
+
+	a.fbook, a.twitt, a.gplus {
+		display: block;
+		width: 40px;
+		height: 40px;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		background: url(../images/social-icons.png) no-repeat;
+	}
+
+	a.fbook { background-position: 0 0; }
+	a.fbook:hover { background-position: -40px 0; }
+	a.fbook:active { background-position: -80px 0; }
+
+	a.twitt { background-position: 0 -40px; }
+	a.twitt:hover { background-position: -40px -40px; }
+	a.twitt:active { background-position: -80px -40px; }
+
+	a.gplus { background-position: 0 -80px; }
+	a.gplus:hover { background-position: -40px -80px; }
+	a.gplus:active { background-position: -80px -80px; }
+
+/********** Content Area **********/
+
+#wood {
+	background-image: url(../images/wood.jpg), url(../images/wood_slice.jpg);
+	background-position: center top, left top;
+	background-repeat: no-repeat, repeat-y;
+	padding: 30px 0;
+}
+
+	/********** Sections **********/
+
+	section {
+		padding: 20px;
+		background: white;
+	}
+
+	section a {
+		color: #555;
+		text-decoration: underline;
+	}
+
+/********** Details **********/
+
+#details {
+	clear:both;
+	padding: 20px 10px;
+	/* gradient */
+	background: rgb(229,229,229); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(229,229,229,1) 0%, rgba(255,255,255,1) 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(229,229,229,1)), color-stop(99%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 99%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 99%); /* W3C */
+}
+
+	#details a:link, #details a:visited {
+		color: black;
+		text-decoration: none;
+	}
+
+	#details a:hover, #details a:active {
+		text-decoration: underline;
+	}
+
+/********** Footer **********/
+
+footer {
+	text-align: center;
+	font-size: 10px;
+	color: #555;
+	padding: 10px 0 20px;
+}
+
+	footer a {
+		color: #555;
+		text-decoration: underline;
+	}
+
+/* code examples copyright Jonathan Grover 2012 */

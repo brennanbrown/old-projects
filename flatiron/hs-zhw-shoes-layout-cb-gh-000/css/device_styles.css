@@ -1,0 +1,155 @@
+/**
+ * Learn HTML & CSS from Scratch
+ * 4.1: Responsive Layouts
+ */
+
+/********** Device Styles **********/
+
+/**
+ * Tablet Landscape: 1024px
+ */
+
+@media only screen and (max-width: 1024px) {
+
+	.wrapper {
+		width: 90%;
+	}
+
+	#social {
+		position: absolute;
+		top: 100px;
+		right: 5%;
+		width: auto;
+	}
+
+	#social a {
+		display: inline-block;
+	}
+
+}
+
+/**
+ * Tablet Portrait: 768px
+ */
+
+@media only screen and (max-width: 768px) {
+
+	#nav_bar nav a {
+		font-size: 0.8em;
+	}
+
+}
+
+/**
+ * Smartphone Landscape: 480px
+ */
+
+@media only screen and (max-width: 480px) {
+
+	#social {
+		display: none;
+	}
+
+	#nav_bar {
+		position: static;
+		border-top: 1px solid #ccc;
+	}
+
+	#nav_bar nav a {
+		padding: 10px 0;
+	}
+
+	#logo {
+		padding: 0 0 10px;
+	}
+
+	#logo h1, #logo h2 {
+		margin-top: 10px;
+		font-size: 1em;
+	}
+
+	#logo h1 {
+		padding: 0 0 0 30px;
+		background-position: 0 -5px;
+	}
+
+	.col1_left, .col1_mid, .col1_right, .col2_left, .col2_right {
+		float: none;
+		width: 100%;
+		margin: 0 0 20px;
+	}
+
+	.border_right {
+		border-right: 0;
+	}
+
+	.hider {
+		display: none;
+	}
+
+}
+
+/**
+ * Smartphone Portrait: 320px
+ */
+
+@media only screen and (max-width: 320px) {
+
+	.wrapper {
+		width: 80%;
+	}
+
+	#nav_bar {
+		width: 100%;
+		border-top: 0;
+		border-bottom: 1px solid #ccc;
+		text-align: center;
+		background: white;
+	}
+
+	#nav_bar .wrapper {
+		width: 100%;
+	}
+
+	#nav_bar nav {
+		border-left: 0;
+	}
+
+	#nav_bar nav a {
+		display: block;
+		width: 100%;
+		font-size: 1.25em;
+		border-right: 0;
+		border-top: 1px solid #ccc;
+	}
+
+	#logo {
+		text-align: center;
+	}
+
+	th, td {
+		padding: 3px;
+		font-size: 0.9em;
+	}
+
+	input.verif_box {
+		display: inline-block;
+		width: 70%;
+		margin-right: 5px;
+	}
+
+}
+
+/**
+ * Printer
+ */
+
+@media print {
+
+	*, h1, h2, h3, h4, h5, h6, p, a, section, div, table {
+		color: black;
+	}
+	
+}
+
+/* code examples copyright Jonathan Grover 2012 */

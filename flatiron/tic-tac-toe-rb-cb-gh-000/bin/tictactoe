@@ -1,0 +1,19 @@
+# TIC-TAC-TOE by Brennan K. Brown #
+#   A Flatiron School Assignment  #
+
+# HOW TO PLAY:
+# This is a CLI program wherein the user will enter
+# a number between 1-9 based on the location they
+# want to put an "X" or an "O". The first turn is
+# always taken by "X".
+
+#!/usr/bin/env ruby
+
+require_relative '../lib/tic_tac_toe'
+
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+puts "Welcome to Tic Tac Toe!"
+display_board(board)
+
+play(board)

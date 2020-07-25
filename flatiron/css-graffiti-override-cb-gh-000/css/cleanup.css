@@ -1,0 +1,55 @@
+/* GRAFFITI CLEANING STYLESHEET */
+
+/* Selectors must be more specific than what is written in `paint.css` in
+   order to properly stop displaying them, as this stylesheet is in lower
+   priority due to the order of stylesheets in 'index.html'. */
+
+/* Hides the first tag by selecting it within the 'wall' ID. */
+#wall .tag-1 {
+  display: none;
+}
+
+/* Hides the second tag by selecting it based on the fact
+   it immediately follows the first tag. */
+#wall > .tag-1 + #tag-2 {
+  display: none;
+}
+
+/* Hides the third tag by selecting it based on the fact
+   it immediately follows the second tag. */
+#wall > #tag-2 + #tag-3 {
+  display: none;
+}
+
+/* Hides the fourth tag by selecting it as the child of
+   the 'parent' class which is subsequently selected as a
+   child of the 'wall' ID. */
+#wall > .parent > #tag-4 {
+  display: none;
+}
+
+/* Hides the fifth tag by selecting it as the child of
+   the 'parent' class which is subsequently selected as a
+   child of the 'wall' ID. In addition to this, it is also
+   selected with it's 'slick' class and as the first child
+   of the 'parent' class. */
+#wall > .parent > #tag-5.slick:first-child {
+  display: none;
+}
+
+/* Hides the sixth tag by selecting it as the first child
+   of the upper div tag, which is selected as the last child
+   of the 'parent' class, which is then finally selected as
+   the child of the 'wall' ID. */
+#wall > .parent > div:last-child > #tag-6:first-child {
+  display: none;
+}
+
+/* Hides the seventh and final tag by selecting it as the
+   first child, as well as with the 'slick' class, of the
+   upper div tag, which is selected as the last child of
+   the 'parent' class, which is finally selected as the
+   child of the 'wall' id. */
+#wall > .parent > div > #tag-7.slick:first-child {
+  display: none;
+}
